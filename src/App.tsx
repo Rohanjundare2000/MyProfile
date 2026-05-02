@@ -6,7 +6,7 @@ import { Hero } from './components/Hero'
 import { Projects } from './components/Projects'
 import { TechStack } from './components/TechStack'
 import { ThemeToggle } from './components/ThemeToggle'
-import { HashRouter } from 'react-router-dom'  // Keep this import
+import { HashRouter } from 'react-router-dom'
 
 const NAV = [
   { href: '#experience', label: 'Experience' },
@@ -18,7 +18,7 @@ const NAV = [
 
 function App() {
   return (
-    <HashRouter>  {/* ← ADD THIS wrapper */}
+    <HashRouter>
       <div className="app">
         <a href="#main" className="skip-link">
           Skip to content
@@ -61,7 +61,7 @@ function App() {
           </div>
         </main>
       </div>
-    </HashRouter>  {/* ← CLOSE the wrapper */}
+    </HashRouter>
   )
 }
 
